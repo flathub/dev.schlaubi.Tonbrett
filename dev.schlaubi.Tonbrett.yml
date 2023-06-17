@@ -21,8 +21,8 @@ modules:
       - mv * /app
     sources:
       - type: archive
-        url: https://github.com/DRSchlaubi/tonbrett/releases/download/1.9.8/tonbrett-1.9.8-linux.tar.gz
-        sha256: bab27a3c39520cb699e30872983a7d7bedd2596e33adab0cdc05e3c7135cdc2a
+        url: https://github.com/DRSchlaubi/tonbrett/releases/download/1.9.9/tonbrett-1.9.9-linux.tar.gz
+        sha256: 6c88126af57472eae0363a7498960329c3dafe04f3d3952dc5d46f4909d0c725
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DRSchlaubi/Tonbrett/releases/latest
