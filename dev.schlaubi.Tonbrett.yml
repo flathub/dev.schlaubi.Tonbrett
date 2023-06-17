@@ -21,13 +21,14 @@ modules:
       - mv * /app
     sources:
       - type: archive
-        url: https://github.com/DRSchlaubi/tonbrett/releases/download/1.9.7/tonbrett-1.9.7-linux.tar.gz
-        sha256: 9f13ea19848d861682e4b121f7c07fba12afc0bce143a0da76e56a2cfccfd971
+        url: https://github.com/DRSchlaubi/tonbrett/releases/download/1.9.8/tonbrett-1.9.8-linux.tar.gz
+        sha256: bab27a3c39520cb699e30872983a7d7bedd2596e33adab0cdc05e3c7135cdc2a
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DRSchlaubi/Tonbrett/releases/latest
-          version-query: ".tag_name"
-          url-query: ".assets[] | select(.name==\"tonbrett-\" + $version +\"-linux.tar.gz\") | .browser_download_url"
+          version-query: .tag_name
+          url-query: .assets[] | select(.name=="tonbrett-" + $version +"-linux.tar.gz")
+            | .browser_download_url
       - type: file
         path: logo.png
       - type: file

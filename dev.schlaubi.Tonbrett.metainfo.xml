@@ -26,8 +26,8 @@
   </screenshots>
 
   <releases>
+    <release version="1.9.8" date="2023-06-17"/>
     <release version="1.9.7" timestamp="2023-13-06"/>
   </releases>
   <content_rating type="oars-1.0"/>
 </component>
-
