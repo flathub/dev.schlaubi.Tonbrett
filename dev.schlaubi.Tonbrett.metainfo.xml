@@ -19,6 +19,10 @@
     <binary>Tonbrett</binary>
   </provides>
 
+  <categories>
+    <category>Entertainment</category>
+  </categories>
+
   <screenshots>
     <screenshot type="default">
       <image>https://user-images.githubusercontent.com/16060205/239585482-08b70fd0-fbc5-4701-b2f9-e2098ebbd527.png</image>
