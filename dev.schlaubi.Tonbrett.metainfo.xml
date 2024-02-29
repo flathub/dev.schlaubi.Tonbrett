@@ -4,17 +4,19 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>Tonbrett</name>
-  <developer_name>Michael Rittmeister (schlau.bi)</developer_name>
+  <developer id="dev.schlaubi">
+    <name>Michael Rittmeister</name>
+  </developer>
   <summary>Companion App for Discord Soundboard Bot</summary>
-  
+
   <description>
     <p>Tonbrett is a companion app to play Sounds through a Discord Soundboard</p>
   </description>
- 
+
   <launchable type="desktop-id">dev.schlaubi.Tonbrett.desktop</launchable>
 
   <url type="homepage">https://github.com/DRSchlaubi/Tonbrett/</url>
-  
+
   <provides>
     <binary>Tonbrett</binary>
   </provides>
@@ -29,6 +31,7 @@
     </screenshot>
   </screenshots>
 
+  <launchable type="desktop-id">dev.schlaubi.Tonbrett.desktop</launchable>
   <releases>
     <release version="1.18.14" date="2024-02-08"/>
     <release version="1.18.13" date="2024-02-06"/>
@@ -80,7 +83,6 @@
     <release version="1.9.10" date="2023-06-18"/>
     <release version="1.9.9" date="2023-06-17"/>
     <release version="1.9.8" date="2023-06-17"/>
-    <release version="1.9.7" timestamp="2023-06-13" />
   </releases>
   <content_rating type="oars-1.0"/>
 </component>
