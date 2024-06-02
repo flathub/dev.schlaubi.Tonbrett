@@ -33,8 +33,11 @@
 
   <launchable type="desktop-id">dev.schlaubi.Tonbrett.desktop</launchable>
   <releases>
-    <release version="1.20.0" date="2024-05-30">
+    <release version="1.20.1" date="2024-06-02">
       <description></description>
+    </release>
+    <release version="1.20.0" date="2024-05-30">
+      <description/>
     </release>
     <release version="1.18.19" date="2024-02-28"/>
     <release version="1.18.14" date="2024-02-08"/>
