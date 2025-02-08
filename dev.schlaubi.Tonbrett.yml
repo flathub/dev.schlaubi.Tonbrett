@@ -21,13 +21,22 @@ modules:
       - mv * /app
     sources:
       - type: archive
-        url: https://github.com/DRSchlaubi/tonbrett/releases/download/2.2.1/tonbrett-2.2.1-linux.tar.gz
-        sha256: c581ab4e3575200c251b08e1ecbe9568c298c152f1568cf92dd8728c1e70a108
+        url: https://github.com/DRSchlaubi/tonbrett/releases/download/2.3.1/tonbrett-2.3.1-linux-amd64.tar.gz
+        sha256: b9474adf0a976de85dbc4cb5eefbf52e05413dc309200670768ca14b007f17f0
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DRSchlaubi/Tonbrett/releases/latest
           version-query: .tag_name
-          url-query: .assets[] | select(.name=="tonbrett-" + $version +"-linux.tar.gz")
+          url-query: .assets[] | select(.name=="tonbrett-" + $version +"-linux-amd64.tar.gz")
+            | .browser_download_url
+      - type: archive
+        url: https://github.com/DRSchlaubi/tonbrett/releases/download/2.3.1/tonbrett-2.3.1-linux-aarch64.tar.gz
+        sha256: ed1ad4d9a115cc9a248b874223db4d1556a1ab70f0e82dbdea7b4d3348ff0102
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/DRSchlaubi/Tonbrett/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name=="tonbrett-" + $version +"-linux-aarch64.tar.gz")
             | .browser_download_url
       - type: file
         path: logo.png
