@@ -18,9 +18,12 @@ modules:
       - install -Dm 644 -t /app/share/applications dev.schlaubi.Tonbrett.desktop
       - install -Dm 644 logo.png /app/share/icons/hicolor/128x128/apps/dev.schlaubi.Tonbrett.png
       - install -Dm 644 -t /app/share/metainfo dev.schlaubi.Tonbrett.metainfo.xml
-      - mv * /app
+      - mkdir /app/lib
+      - mv lib/* /app/lib
+      - install -Dm 755 -t /app/bin bin/*
     sources:
       - type: archive
+        only-arches: [x86_64]
         url: https://github.com/DRSchlaubi/tonbrett/releases/download/3.0.12/tonbrett-3.0.12-linux-amd64.tar.gz
         sha256: 01c20256d728b01527f0728bde982d178f457ee28f352c48a58c1d69de62607b
         x-checker-data:
@@ -32,6 +35,7 @@ modules:
       - type: archive
         url: https://github.com/DRSchlaubi/tonbrett/releases/download/3.0.12/tonbrett-3.0.12-linux-aarch64.tar.gz
         sha256: ff6bb89bcbd4a09fd3dcbd36040633c3ba0e783306b20b92a6a7b065a7c70c9f
+        only-arches: [aarch64]
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DRSchlaubi/Tonbrett/releases/latest
