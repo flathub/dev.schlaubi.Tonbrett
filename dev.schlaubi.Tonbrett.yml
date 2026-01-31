@@ -21,8 +21,8 @@ modules:
       - mv * /app
     sources:
       - type: archive
-        url: https://github.com/DRSchlaubi/tonbrett/releases/download/3.0.12/tonbrett-3.0.12-linux-amd64.tar.gz
-        sha256: 01c20256d728b01527f0728bde982d178f457ee28f352c48a58c1d69de62607b
+        url: https://github.com/DRSchlaubi/tonbrett/releases/download/3.1.0/tonbrett-3.1.0-linux-amd64.tar.gz
+        sha256: 7a8168b6273f3741401e64f5f9ce3064876df7fec7b3350b28d1892d46207878
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DRSchlaubi/Tonbrett/releases/latest
@@ -30,8 +30,8 @@ modules:
           url-query: .assets[] | select(.name=="tonbrett-" + $version +"-linux-amd64.tar.gz")
             | .browser_download_url
       - type: archive
-        url: https://github.com/DRSchlaubi/tonbrett/releases/download/3.0.12/tonbrett-3.0.12-linux-aarch64.tar.gz
-        sha256: ff6bb89bcbd4a09fd3dcbd36040633c3ba0e783306b20b92a6a7b065a7c70c9f
+        url: https://github.com/DRSchlaubi/tonbrett/releases/download/3.1.0/tonbrett-3.1.0-linux-aarch64.tar.gz
+        sha256: ba6992463f580cdba3a065eb01954af005de5820da274ced246fa6cd26f5682f
         x-checker-data:
           type: json
           url: https://api.github.com/repos/DRSchlaubi/Tonbrett/releases/latest
