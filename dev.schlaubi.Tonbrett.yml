@@ -10,6 +10,8 @@ finish-args:
   - --share=ipc
   - --device=dri
   - --socket=x11
+  # If JDK detects gnome it tries to talk to the session bus which it has no permission for
+  - --env=XDG_CURRENT_DESKTOP=X-Generic
 modules:
   - name: Tonbrett
     only-arches: [x86_64, aarch64]
